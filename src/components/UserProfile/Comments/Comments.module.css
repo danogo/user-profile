@@ -1,0 +1,153 @@
+.Comments {
+  width: 93%;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  border-radius: .5rem;
+  box-shadow: 0 0 4px #ACACAC50;
+  padding-top: 2.5rem;
+  position: relative;
+  top: 3rem;
+  font-family: 'Montserrat';
+  padding-right: .6rem;
+  padding-bottom: 2.5rem;
+}
+
+.Comments ul {
+  list-style: none;
+  overflow-y: scroll;
+  height: 33.1rem;
+  padding-right: .8rem;
+  transition: all .4s ease-in-out;
+}
+
+.Comments ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: #D8D8D860;
+  border-radius: 1rem;
+}
+
+.Comments ul::-webkit-scrollbar-thumb {
+  background-color: #002C7130;
+  border-radius: 1rem;
+}
+
+.Comments li {
+  border-top: 1px solid #EBEBEB;
+  padding: 3rem 2rem 2.55rem 2rem;
+}
+
+.Comments li:last-of-type {
+  padding-bottom: 0;
+}
+
+.btnComments {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  color: #FFA640;
+  letter-spacing: 0;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.btnComments:hover {
+  color: #FFBC70;
+}
+
+.btnCommentsHidden {
+  margin-bottom: 0;
+}
+
+.Comments img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  margin-right: 1.1rem;
+}
+
+.authorBox {
+  display: flex;
+}
+
+.author {
+ flex-grow: 1;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.content {
+  padding-left: 5.1rem;
+  padding-right: 2.7rem;
+  font-size: 14px;
+  color: #444444;
+  letter-spacing: 0;
+  line-height: 21px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.name {
+  font-size: 1.4rem;
+  color: #002C71;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.date {
+  opacity: 0.5;
+  font-size: 1.4rem;
+  color: #002C71;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+.inputBox {
+  padding: 4rem 2.5rem 3.5rem 2.5rem;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 0 4px #ACACAC50;
+  border-radius: 5px;
+}
+
+.inputComment {
+  border: 0;
+  border-bottom: 2px solid #DBE0E8;
+  width: 100%;
+  color: #8298B9;
+  padding: .5rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  font-family: 'Montserrat';
+}
+
+.inputComment::placeholder {
+  font-size: 1.8rem;
+  color: #8298B9;
+  font-family: 'Montserrat';
+}
+
+.Comments ul.hidden {
+  /* display: none; */
+  height: 0;
+  transition: all .4s ease-in-out;
+}
+
+.Comments ul.hidden li:first-of-type {
+  border-top: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .btnComments {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+}
