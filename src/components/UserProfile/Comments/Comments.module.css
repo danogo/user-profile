@@ -9,7 +9,6 @@
   top: 3rem;
   font-family: 'Montserrat';
   padding-right: .6rem;
-  padding-bottom: 2.5rem;
 }
 
 .Comments ul {
@@ -17,7 +16,7 @@
   overflow-y: scroll;
   height: 33.1rem;
   padding-right: .8rem;
-  transition: all .4s ease-in-out;
+  transition: height .4s ease-in-out;
 }
 
 .Comments ul::-webkit-scrollbar {
@@ -31,13 +30,20 @@
   border-radius: 1rem;
 }
 
+.Comments ul:focus,
+.Comments ul:active {
+  outline: 2px solid #FFA640;
+  color: #FFBC70;
+}
+
 .Comments li {
   border-top: 1px solid #EBEBEB;
   padding: 3rem 2rem 2.55rem 2rem;
 }
 
-.Comments li:last-of-type {
-  padding-bottom: 0;
+.Comments li:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
 
 .btnComments {
@@ -57,8 +63,11 @@
   color: #FFBC70;
 }
 
-.btnCommentsHidden {
-  margin-bottom: 0;
+.btnComments:focus,
+.btnComments:active {
+  outline: 2px solid #FFA640;
+  outline-offset: 2px;
+  color: #FFBC70;
 }
 
 .Comments img {
@@ -125,6 +134,7 @@
   font-size: 1.8rem;
   letter-spacing: 0;
   font-family: 'Montserrat';
+  transition: border-bottom-color .3s ease-in;
 }
 
 .inputComment::placeholder {
@@ -133,13 +143,20 @@
   font-family: 'Montserrat';
 }
 
-.Comments ul.hidden {
-  /* display: none; */
-  height: 0;
-  transition: all .4s ease-in-out;
+.inputComment:focus,
+.inputComment:active {
+  border-bottom-color: #FFA640;
+  outline: none;
 }
 
-.Comments ul.hidden li:first-of-type {
+.CommentsHidden ul {
+  /* display: none; */
+  height: 0;
+  transition: height .4s ease-in-out;
+  outline: none;
+}
+
+.CommentsHidden ul li:first-of-type {
   border-top: none;
 }
 

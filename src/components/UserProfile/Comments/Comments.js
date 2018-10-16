@@ -26,7 +26,11 @@ moment.updateLocale('en', {
 const Comments = (props) => {
   const { onInput, onToggleComments, comments, showComments } = props;
 
-  const renderComments = (commentsArray) => {
+  const sortComments = commentsArray => {
+    return commentsArray.sort((comA, comB) => comA.date - comB.date);
+  }
+
+  const renderComments = commentsArray => {
     return commentsArray.map( (el, i) => {
       return (
         <li key={i}>
@@ -44,16 +48,16 @@ const Comments = (props) => {
   }
 
   return (
-    <div className={styles.Comments}>
-      <button onClick={onToggleComments} className={showComments ? styles.btnComments : `${styles.btnCommentsHidden} ${styles.btnComments}`}>
+    <div className={ showComments ? styles.Comments : `${styles.CommentsHidden} ${styles.Comments}`}>
+      <button onClick={onToggleComments} className={styles.btnComments }>
         {showComments ? 'Hide comments' : 'Show comments'} 
         <span className={styles.numOfCom}>{`(${comments.length})`}</span>
       </button>
-      <ul id="comList" className={showComments ? '' : styles.hidden} tabIndex='0'>
-        {renderComments(comments)} 
+      <ul id="comList" tabIndex={showComments ? '0' : '-1'}>
+        {renderComments(sortComments(comments))} 
       </ul>
       <div className={styles.inputBox}>
-        <input onKeyPress={onInput} type="text" className={styles.inputComment} placeholder='Add a comment'/>
+        <input id='inputComment' onKeyPress={onInput} type='text' className={styles.inputComment} placeholder='Add a comment'/>
       </div>
     </div>
   ); 

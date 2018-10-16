@@ -16,14 +16,9 @@ class UserProfile extends React.Component {
       isLiked: false,
       isFollowed: false,
       showComments: true,
-      showModal: false
+      showModal: false,
+      addedComment: false,
     };
-    this.handleHeartClick = this.handleHeartClick.bind(this);
-    this.handleFollowClick = this.handleFollowClick.bind(this);
-    this.addComment = this.addComment.bind(this);
-    this.toggleComments = this.toggleComments.bind(this);
-    this.handleModalShow = this.handleModalShow.bind(this);
-    this.handleModalHide = this.handleModalHide.bind(this);
   }
 
   componentDidMount() {
@@ -32,7 +27,21 @@ class UserProfile extends React.Component {
     });
   }
 
-  handleHeartClick() {
+  componentDidUpdate(prevProps, prevState) {
+    if((prevState.addedComment !== this.state.addedComment) && this.state.showComments) {
+      document.getElementById('inputComment').value = '';
+      setTimeout(() => {
+        const list = document.getElementById('comList');
+        list.lastElementChild.scrollIntoView({behavior: 'smooth'});
+      }, prevState.showComments ? 0 : 400);
+    }
+    if(this.state.showModal) {
+      const inputModal = document.getElementById('inputModal');
+      inputModal.focus();
+    }
+  }
+
+  handleHeartClick = () => {
     if(!this.state.isLiked) {
       this.setState({
         likes: this.state.likes + 1,
@@ -46,7 +55,7 @@ class UserProfile extends React.Component {
     }
   }
 
-  handleFollowClick() {
+  handleFollowClick = () => {
     if(!this.state.isFollowed) {
       this.setState({
         followers: this.state.followers + 1,
@@ -60,7 +69,7 @@ class UserProfile extends React.Component {
     }
   }
 
-  addComment(event) {
+  addComment = event => {
     // grabbing pressed key
     let pressed = event.key || event.keyCode;
     // create new comment if user pressed enter and input is not empty
@@ -73,24 +82,25 @@ class UserProfile extends React.Component {
       // update comments array based on previous state
       this.setState(prevState => ({
         comments: [...prevState.comments, newComment],
-        showComments: true
+        showComments: true,
+        addedComment: !prevState.addedComment
       }));
     }
   }
 
-  toggleComments() {
+  toggleComments = () => {
     this.setState(prevState => ({
       showComments: !prevState.showComments
     }));
   }
 
-  handleModalShow() {
+  handleModalShow = () => {
     this.setState({
       showModal: true
     })
   }
 
-  handleModalHide() {
+  handleModalHide = () => {
     this.setState({
       showModal: false
     })

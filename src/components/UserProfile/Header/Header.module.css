@@ -98,27 +98,54 @@
   padding-top: .2rem;
 }
 
-.shareIcon {
+.btnShare {
+  border: none;
+  background: none;
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+.btnShare:focus,
+.btnShare:active {
+  outline: 2px solid #FFA640;
+  outline-offset: 2px;
+}
+
+.btnShare:hover .shareIcon,
+.btnShare:active .shareIcon,
+.btnShare:focus .shareIcon {
+  color: #FFBC70;
+}
+
+.shareIcon {
   color: #FFA640;
   cursor: pointer;
   font-size: 1.2rem;
 }
 
-.shareIcon:hover {
-  color: #FFBC70;
+.btnHeart {
+  border: none;
+  background: none;
+  margin-left: 1rem;
+}
+
+.btnHeart:focus,
+.btnHeart:active {
+  outline: 2px solid #FFA640;
+  outline-offset: 2px;
+  color: #FFA640;
 }
 
 .heartIcon {
-  margin-left: 1rem;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
-.heartIcon:hover {
-  color: #FFA640;
+.btnHeart:focus .heartIcon,
+.btnHeart:active .heartIcon,
+.btnHeart:hover .heartIcon {
+  color: #FFBC70;
 }
 
 .btnFollow {
@@ -141,6 +168,13 @@
 }
 
 .btnFollow:hover {
+  background-color: #FFBC70;
+}
+
+.btnFollow:focus,
+.btnFollow:active {
+  outline: 2px solid #FFA640;
+  outline-offset: 2px;
   background-color: #FFBC70;
 }
 

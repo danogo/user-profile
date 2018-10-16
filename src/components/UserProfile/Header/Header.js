@@ -7,16 +7,20 @@ const Header = (props) => {
   const { onHeartClick, onFollowClick, likes, following, followers, isFollowed, isLiked, onShareClick } = props;
   return (
       <div className={styles.Header}>
-        <FontAwesomeIcon onClick={onShareClick} className={styles.shareIcon} icon='share-square' tabIndex='0'/>
+        <button onClick={onShareClick} className={styles.btnShare}>
+        <FontAwesomeIcon className={styles.shareIcon} icon='share-square'/>
+        </button>
         <div className={styles.userInfo}>
           <img src={picture} alt='user'/>
           <div>
             <h1>Harvey Specter</h1>
+            <button onClick={onHeartClick} className={styles.btnHeart}>
             {
               isLiked
-              ? <FontAwesomeIcon onClick={onHeartClick} className={styles.heartIcon} icon={['fas', 'heart']} color='#FFA640'  tabIndex='0'/>
-              : <FontAwesomeIcon onClick={onHeartClick} className={styles.heartIcon} icon={['far', 'heart']} color='#D9D9D9'  tabIndex='0'/>
+              ? <FontAwesomeIcon className={styles.heartIcon} icon={['fas', 'heart']} color='#FFA640'/>
+              : <FontAwesomeIcon className={styles.heartIcon} icon={['far', 'heart']} color='#D9D9D9'/>
             }
+            </button>
             <h2>New York, USA</h2>
           </div>
         </div>

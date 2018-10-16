@@ -1,5 +1,6 @@
 .App {
   padding-top: 4rem;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 550px) {

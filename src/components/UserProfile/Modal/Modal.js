@@ -9,7 +9,7 @@ const Modal = (props) => {
   return (
     <div className={modalClassName}>
       <div className={styles.modalBox}>
-        <input value={window.location.href} onFocus={e => e.target.select()} readOnly/>
+        <input id='inputModal' value={window.location.href} onFocus={e => e.target.select()} readOnly/>
         <button onClick={onBtnClick}>
           <FontAwesomeIcon icon={['fas', 'times']} color='#FFFFFF'/>
         </button>
