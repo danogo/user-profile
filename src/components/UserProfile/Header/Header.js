@@ -7,14 +7,14 @@ const Header = (props) => {
   const { onHeartClick, onFollowClick, likes, following, followers, isFollowed, isLiked, onShareClick } = props;
   return (
       <div className={styles.Header}>
-        <button onClick={onShareClick} className={styles.btnShare}>
-        <FontAwesomeIcon className={styles.shareIcon} icon='share-square'/>
+        <button id='btnShare' onClick={onShareClick} className={styles.btnShare}>
+          <FontAwesomeIcon className={styles.shareIcon} icon='share-square'/>
         </button>
         <div className={styles.userInfo}>
           <img src={picture} alt='user'/>
           <div>
             <h1>Harvey Specter</h1>
-            <button onClick={onHeartClick} className={styles.btnHeart}>
+            <button id='btnHeart' onClick={onHeartClick} className={styles.btnHeart}>
             {
               isLiked
               ? <FontAwesomeIcon className={styles.heartIcon} icon={['fas', 'heart']} color='#FFA640'/>
@@ -43,8 +43,8 @@ const Header = (props) => {
           </ul>
           {
             isFollowed 
-              ? <button onClick={onFollowClick} className={`${styles.btnFollow} ${styles.btnUnfollow}`}>UNFOLLOW</button>
-              : <button onClick={onFollowClick} className={styles.btnFollow}>FOLLOW</button>
+              ? <button id='btnUnfollow' onClick={onFollowClick} className={`${styles.btnFollow} ${styles.btnUnfollow}`}>UNFOLLOW</button>
+              : <button id='btnFollow' onClick={onFollowClick} className={styles.btnFollow}>FOLLOW</button>
           }
         </div>
       </div>

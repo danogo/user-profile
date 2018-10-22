@@ -1,0 +1,359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfile component renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserProfile />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header
+          followers={4433}
+          following={723}
+          isFollowed={false}
+          isLiked={false}
+          likes={121}
+          onFollowClick={[Function]}
+          onHeartClick={[Function]}
+          onShareClick={[Function]}
+        />,
+        <Comments
+          comments={
+            Array [
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1529088547946",
+                "username": "Mike Ross",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1536088547946",
+                "username": "Rachel Zein",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1537998547946",
+                "username": "Louis Litt",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1539358547946",
+                "username": "Richard Dawkins",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538288547946",
+                "username": "Carl Sagan",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538998547946",
+                "username": "Neil deGrasse Tyson",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1539488547946",
+                "username": "Christopher Hitchens",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538700547946",
+                "username": "Richard Feynman",
+              },
+            ]
+          }
+          onInput={[Function]}
+          onToggleComments={[Function]}
+          showComments={true}
+        />,
+        <Modal
+          onBtnClick={[Function]}
+          showModal={false}
+        />,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "followers": 4433,
+          "following": 723,
+          "isFollowed": false,
+          "isLiked": false,
+          "likes": 121,
+          "onFollowClick": [Function],
+          "onHeartClick": [Function],
+          "onShareClick": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "comments": Array [
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1529088547946",
+              "username": "Mike Ross",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1536088547946",
+              "username": "Rachel Zein",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1537998547946",
+              "username": "Louis Litt",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1539358547946",
+              "username": "Richard Dawkins",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1538288547946",
+              "username": "Carl Sagan",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1538998547946",
+              "username": "Neil deGrasse Tyson",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1539488547946",
+              "username": "Christopher Hitchens",
+            },
+            Object {
+              "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+              "date": "1538700547946",
+              "username": "Richard Feynman",
+            },
+          ],
+          "onInput": [Function],
+          "onToggleComments": [Function],
+          "showComments": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "onBtnClick": [Function],
+          "showModal": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header
+            followers={4433}
+            following={723}
+            isFollowed={false}
+            isLiked={false}
+            likes={121}
+            onFollowClick={[Function]}
+            onHeartClick={[Function]}
+            onShareClick={[Function]}
+          />,
+          <Comments
+            comments={
+              Array [
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1529088547946",
+                  "username": "Mike Ross",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1536088547946",
+                  "username": "Rachel Zein",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1537998547946",
+                  "username": "Louis Litt",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1539358547946",
+                  "username": "Richard Dawkins",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1538288547946",
+                  "username": "Carl Sagan",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1538998547946",
+                  "username": "Neil deGrasse Tyson",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1539488547946",
+                  "username": "Christopher Hitchens",
+                },
+                Object {
+                  "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "date": "1538700547946",
+                  "username": "Richard Feynman",
+                },
+              ]
+            }
+            onInput={[Function]}
+            onToggleComments={[Function]}
+            showComments={true}
+          />,
+          <Modal
+            onBtnClick={[Function]}
+            showModal={false}
+          />,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "followers": 4433,
+            "following": 723,
+            "isFollowed": false,
+            "isLiked": false,
+            "likes": 121,
+            "onFollowClick": [Function],
+            "onHeartClick": [Function],
+            "onShareClick": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "comments": Array [
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1529088547946",
+                "username": "Mike Ross",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1536088547946",
+                "username": "Rachel Zein",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1537998547946",
+                "username": "Louis Litt",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1539358547946",
+                "username": "Richard Dawkins",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538288547946",
+                "username": "Carl Sagan",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538998547946",
+                "username": "Neil deGrasse Tyson",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1539488547946",
+                "username": "Christopher Hitchens",
+              },
+              Object {
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "date": "1538700547946",
+                "username": "Richard Feynman",
+              },
+            ],
+            "onInput": [Function],
+            "onToggleComments": [Function],
+            "showComments": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "onBtnClick": [Function],
+            "showModal": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

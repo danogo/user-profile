@@ -28,7 +28,7 @@ const Comments = (props) => {
 
   const sortComments = commentsArray => {
     return commentsArray.sort((comA, comB) => comA.date - comB.date);
-  }
+  };
 
   const renderComments = commentsArray => {
     return commentsArray.map( (el, i) => {
@@ -45,11 +45,11 @@ const Comments = (props) => {
         </li>
       )
     });
-  }
+  };
 
   return (
     <div className={ showComments ? styles.Comments : `${styles.CommentsHidden} ${styles.Comments}`}>
-      <button onClick={onToggleComments} className={styles.btnComments }>
+      <button onClick={onToggleComments} className={styles.btnComments}>
         {showComments ? 'Hide comments' : 'Show comments'} 
         <span className={styles.numOfCom}>{`(${comments.length})`}</span>
       </button>

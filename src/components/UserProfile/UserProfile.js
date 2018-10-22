@@ -97,13 +97,13 @@ class UserProfile extends React.Component {
   handleModalShow = () => {
     this.setState({
       showModal: true
-    })
+    });
   }
 
   handleModalHide = () => {
     this.setState({
       showModal: false
-    })
+    });
   }
   
   render() {

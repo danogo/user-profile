@@ -1,0 +1,1105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments component renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Comments
+    comments={
+      Array [
+        Object {
+          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+          "date": "1529588547946",
+          "username": "Bob Ross",
+        },
+        Object {
+          "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+          "date": "1539088547946",
+          "username": "Mike Ross",
+        },
+      ]
+    }
+    onInput={[MockFunction]}
+    onToggleComments={[MockFunction]}
+    showComments={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <button
+          className="btnComments"
+          onClick={[MockFunction]}
+        >
+          Hide comments
+          <span
+            className="numOfCom"
+          >
+            (2)
+          </span>
+        </button>,
+        <ul
+          id="comList"
+          tabIndex="0"
+        >
+          <li>
+            <div
+              className="authorBox"
+            >
+              <img
+                alt="author of the comment"
+                src="pic.jpg"
+              />
+              <div
+                className="author"
+              >
+                <span
+                  className="name"
+                >
+                  Bob Ross
+                </span>
+                <span
+                  className="date"
+                >
+                  4M
+                </span>
+              </div>
+            </div>
+            <p
+              className="content"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+            </p>
+          </li>
+          <li>
+            <div
+              className="authorBox"
+            >
+              <img
+                alt="author of the comment"
+                src="pic.jpg"
+              />
+              <div
+                className="author"
+              >
+                <span
+                  className="name"
+                >
+                  Mike Ross
+                </span>
+                <span
+                  className="date"
+                >
+                  13d
+                </span>
+              </div>
+            </div>
+            <p
+              className="content"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+            </p>
+          </li>
+        </ul>,
+        <div
+          className="inputBox"
+        >
+          <input
+            className="inputComment"
+            id="inputComment"
+            onKeyPress={[MockFunction]}
+            placeholder="Add a comment"
+            type="text"
+          />
+        </div>,
+      ],
+      "className": "Comments",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Hide comments",
+            <span
+              className="numOfCom"
+            >
+              (2)
+            </span>,
+          ],
+          "className": "btnComments",
+          "onClick": [MockFunction],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Hide comments",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "(2)",
+              "className": "numOfCom",
+            },
+            "ref": null,
+            "rendered": "(2)",
+            "type": "span",
+          },
+        ],
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <div
+                className="authorBox"
+              >
+                <img
+                  alt="author of the comment"
+                  src="pic.jpg"
+                />
+                <div
+                  className="author"
+                >
+                  <span
+                    className="name"
+                  >
+                    Bob Ross
+                  </span>
+                  <span
+                    className="date"
+                  >
+                    4M
+                  </span>
+                </div>
+              </div>
+              <p
+                className="content"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+              </p>
+            </li>,
+            <li>
+              <div
+                className="authorBox"
+              >
+                <img
+                  alt="author of the comment"
+                  src="pic.jpg"
+                />
+                <div
+                  className="author"
+                >
+                  <span
+                    className="name"
+                  >
+                    Mike Ross
+                  </span>
+                  <span
+                    className="date"
+                  >
+                    13d
+                  </span>
+                </div>
+              </div>
+              <p
+                className="content"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+              </p>
+            </li>,
+          ],
+          "id": "comList",
+          "tabIndex": "0",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="authorBox"
+                >
+                  <img
+                    alt="author of the comment"
+                    src="pic.jpg"
+                  />
+                  <div
+                    className="author"
+                  >
+                    <span
+                      className="name"
+                    >
+                      Bob Ross
+                    </span>
+                    <span
+                      className="date"
+                    >
+                      4M
+                    </span>
+                  </div>
+                </div>,
+                <p
+                  className="content"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                </p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt="author of the comment"
+                      src="pic.jpg"
+                    />,
+                    <div
+                      className="author"
+                    >
+                      <span
+                        className="name"
+                      >
+                        Bob Ross
+                      </span>
+                      <span
+                        className="date"
+                      >
+                        4M
+                      </span>
+                    </div>,
+                  ],
+                  "className": "authorBox",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "author of the comment",
+                      "src": "pic.jpg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="name"
+                        >
+                          Bob Ross
+                        </span>,
+                        <span
+                          className="date"
+                        >
+                          4M
+                        </span>,
+                      ],
+                      "className": "author",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Bob Ross",
+                          "className": "name",
+                        },
+                        "ref": null,
+                        "rendered": "Bob Ross",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "4M",
+                          "className": "date",
+                        },
+                        "ref": null,
+                        "rendered": "4M",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "className": "content",
+                },
+                "ref": null,
+                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "type": "p",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="authorBox"
+                >
+                  <img
+                    alt="author of the comment"
+                    src="pic.jpg"
+                  />
+                  <div
+                    className="author"
+                  >
+                    <span
+                      className="name"
+                    >
+                      Mike Ross
+                    </span>
+                    <span
+                      className="date"
+                    >
+                      13d
+                    </span>
+                  </div>
+                </div>,
+                <p
+                  className="content"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                </p>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt="author of the comment"
+                      src="pic.jpg"
+                    />,
+                    <div
+                      className="author"
+                    >
+                      <span
+                        className="name"
+                      >
+                        Mike Ross
+                      </span>
+                      <span
+                        className="date"
+                      >
+                        13d
+                      </span>
+                    </div>,
+                  ],
+                  "className": "authorBox",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "author of the comment",
+                      "src": "pic.jpg",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <span
+                          className="name"
+                        >
+                          Mike Ross
+                        </span>,
+                        <span
+                          className="date"
+                        >
+                          13d
+                        </span>,
+                      ],
+                      "className": "author",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Mike Ross",
+                          "className": "name",
+                        },
+                        "ref": null,
+                        "rendered": "Mike Ross",
+                        "type": "span",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "13d",
+                          "className": "date",
+                        },
+                        "ref": null,
+                        "rendered": "13d",
+                        "type": "span",
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "className": "content",
+                },
+                "ref": null,
+                "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                "type": "p",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <input
+            className="inputComment"
+            id="inputComment"
+            onKeyPress={[MockFunction]}
+            placeholder="Add a comment"
+            type="text"
+          />,
+          "className": "inputBox",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "inputComment",
+            "id": "inputComment",
+            "onKeyPress": [MockFunction],
+            "placeholder": "Add a comment",
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="btnComments"
+            onClick={[MockFunction]}
+          >
+            Hide comments
+            <span
+              className="numOfCom"
+            >
+              (2)
+            </span>
+          </button>,
+          <ul
+            id="comList"
+            tabIndex="0"
+          >
+            <li>
+              <div
+                className="authorBox"
+              >
+                <img
+                  alt="author of the comment"
+                  src="pic.jpg"
+                />
+                <div
+                  className="author"
+                >
+                  <span
+                    className="name"
+                  >
+                    Bob Ross
+                  </span>
+                  <span
+                    className="date"
+                  >
+                    4M
+                  </span>
+                </div>
+              </div>
+              <p
+                className="content"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+              </p>
+            </li>
+            <li>
+              <div
+                className="authorBox"
+              >
+                <img
+                  alt="author of the comment"
+                  src="pic.jpg"
+                />
+                <div
+                  className="author"
+                >
+                  <span
+                    className="name"
+                  >
+                    Mike Ross
+                  </span>
+                  <span
+                    className="date"
+                  >
+                    13d
+                  </span>
+                </div>
+              </div>
+              <p
+                className="content"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+              </p>
+            </li>
+          </ul>,
+          <div
+            className="inputBox"
+          >
+            <input
+              className="inputComment"
+              id="inputComment"
+              onKeyPress={[MockFunction]}
+              placeholder="Add a comment"
+              type="text"
+            />
+          </div>,
+        ],
+        "className": "Comments",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Hide comments",
+              <span
+                className="numOfCom"
+              >
+                (2)
+              </span>,
+            ],
+            "className": "btnComments",
+            "onClick": [MockFunction],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Hide comments",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "(2)",
+                "className": "numOfCom",
+              },
+              "ref": null,
+              "rendered": "(2)",
+              "type": "span",
+            },
+          ],
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <div
+                  className="authorBox"
+                >
+                  <img
+                    alt="author of the comment"
+                    src="pic.jpg"
+                  />
+                  <div
+                    className="author"
+                  >
+                    <span
+                      className="name"
+                    >
+                      Bob Ross
+                    </span>
+                    <span
+                      className="date"
+                    >
+                      4M
+                    </span>
+                  </div>
+                </div>
+                <p
+                  className="content"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                </p>
+              </li>,
+              <li>
+                <div
+                  className="authorBox"
+                >
+                  <img
+                    alt="author of the comment"
+                    src="pic.jpg"
+                  />
+                  <div
+                    className="author"
+                  >
+                    <span
+                      className="name"
+                    >
+                      Mike Ross
+                    </span>
+                    <span
+                      className="date"
+                    >
+                      13d
+                    </span>
+                  </div>
+                </div>
+                <p
+                  className="content"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                </p>
+              </li>,
+            ],
+            "id": "comList",
+            "tabIndex": "0",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="authorBox"
+                  >
+                    <img
+                      alt="author of the comment"
+                      src="pic.jpg"
+                    />
+                    <div
+                      className="author"
+                    >
+                      <span
+                        className="name"
+                      >
+                        Bob Ross
+                      </span>
+                      <span
+                        className="date"
+                      >
+                        4M
+                      </span>
+                    </div>
+                  </div>,
+                  <p
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <img
+                        alt="author of the comment"
+                        src="pic.jpg"
+                      />,
+                      <div
+                        className="author"
+                      >
+                        <span
+                          className="name"
+                        >
+                          Bob Ross
+                        </span>
+                        <span
+                          className="date"
+                        >
+                          4M
+                        </span>
+                      </div>,
+                    ],
+                    "className": "authorBox",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "author of the comment",
+                        "src": "pic.jpg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="name"
+                          >
+                            Bob Ross
+                          </span>,
+                          <span
+                            className="date"
+                          >
+                            4M
+                          </span>,
+                        ],
+                        "className": "author",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Bob Ross",
+                            "className": "name",
+                          },
+                          "ref": null,
+                          "rendered": "Bob Ross",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "4M",
+                            "className": "date",
+                          },
+                          "ref": null,
+                          "rendered": "4M",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                    "className": "content",
+                  },
+                  "ref": null,
+                  "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "type": "p",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="authorBox"
+                  >
+                    <img
+                      alt="author of the comment"
+                      src="pic.jpg"
+                    />
+                    <div
+                      className="author"
+                    >
+                      <span
+                        className="name"
+                      >
+                        Mike Ross
+                      </span>
+                      <span
+                        className="date"
+                      >
+                        13d
+                      </span>
+                    </div>
+                  </div>,
+                  <p
+                    className="content"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.
+                  </p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <img
+                        alt="author of the comment"
+                        src="pic.jpg"
+                      />,
+                      <div
+                        className="author"
+                      >
+                        <span
+                          className="name"
+                        >
+                          Mike Ross
+                        </span>
+                        <span
+                          className="date"
+                        >
+                          13d
+                        </span>
+                      </div>,
+                    ],
+                    "className": "authorBox",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "author of the comment",
+                        "src": "pic.jpg",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <span
+                            className="name"
+                          >
+                            Mike Ross
+                          </span>,
+                          <span
+                            className="date"
+                          >
+                            13d
+                          </span>,
+                        ],
+                        "className": "author",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "Mike Ross",
+                            "className": "name",
+                          },
+                          "ref": null,
+                          "rendered": "Mike Ross",
+                          "type": "span",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "13d",
+                            "className": "date",
+                          },
+                          "ref": null,
+                          "rendered": "13d",
+                          "type": "span",
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                    "className": "content",
+                  },
+                  "ref": null,
+                  "rendered": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto autem nam quae delectus maxime inventore odio libero provident obcaecati a.",
+                  "type": "p",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="inputComment"
+              id="inputComment"
+              onKeyPress={[MockFunction]}
+              placeholder="Add a comment"
+              type="text"
+            />,
+            "className": "inputBox",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "inputComment",
+              "id": "inputComment",
+              "onKeyPress": [MockFunction],
+              "placeholder": "Add a comment",
+              "type": "text",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
